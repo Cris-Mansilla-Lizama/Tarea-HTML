@@ -4,49 +4,46 @@ body{
     margin: 10px;
 }
 header{
-    position: static;
+    position: fixed;
     top: 0px;
     height: 80px;
     width: 100%;
-}
-
-h1{
     font-family: "Noto Sans", sans-serif;
     font-style: italic;
     background-color: blueviolet;
     text-align: center;
     color: rgb(0, 225, 255);
-    padding: 2rem;
+    padding: 1rem;
+}
+
+/* h1{
+    font-family: "Noto Sans", sans-serif;
+    font-style: italic;
+    background-color: blueviolet;
+    text-align: center;
+    color: rgb(0, 225, 255);
+    padding: 2rem; */
     /* position: fixed; 
     top: 0px;
     height: 40px;
     width: 100%; */
 
     /* EN ESTE LUGAR TRATÉ DE DEJAR LA CAJA FIJA, SIN EMBARGO QUEDÓ UNA FRANJA HORIZONTAL TRANSPARENTE
-    SOBRE ELLA Y SE PODÍAN VER LOS TEXTOS E IMAGENES QUE PASABAN TRAS ELLA AL HACER SCROLL. */
-}
+    SOBRE ELLA Y SE PODÍAN VER LOS TEXTOS E IMAGENES QUE PASABAN TRAS ELLA AL HACER SCROLL.
+    PUDE HACERLO, LLEVÉ TODO EL CONTENIDO DE H1 AL HEADER, DONDE TENGO SOLAMENTE EL TITULO Y DEJÉ TODO EN UN SOLO LUGAR.
+} */
 
 p{
     font-size: 1rem;
     text-align: justify;
 }
 
-.piedepagina{
-    text-align: center;
-    background-color: rgb(183, 116, 245);
-    width: 218px;
-    text-align: center;
-    padding: 1rem 0rem;
-    display: inline-block;
-    text-align: center;
-    justify-content: space-between;
-}
-
 .foto{
     width: 220px;
-    /* margin: 9rem 2rem 0rem; */
-    margin: 0rem 2rem;
-    border-radius: 200px 200px 200px 0px
+    margin: 7rem 2rem 0rem;
+    border-radius: 200px 200px 200px 0px;
+    filter: saturate(3);
+    filter: contrast(1.5);
 }
 
 .foto:hover{
@@ -80,6 +77,18 @@ footer{
     text-align: center;
     color: #efefef;
     padding: 0.1rem;
+    
+}
+
+.piedepagina{
+    text-align: center;
+    background-color: rgb(183, 116, 245);
+    width: 218px;
+    text-align: center;
+    padding: 1rem 0rem;
+    display: inline-block;
+    text-align: center;
+    justify-content: space-between;
 }
 
 footer a{
